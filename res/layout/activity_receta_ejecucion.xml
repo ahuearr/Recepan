@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/nombreReceta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="@string/nombreReceta" />
+    <LinearLayout
+        android:id="@+id/layoutEjecucion"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    <EditText 
+	        android:id="@+id/descripcionRecetaEjecucion"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text=""
+	        android:hint="@string/descripcionRecetaEjecucion" />
+		<com.parse.ParseImageView android:id="@+id/fotoRecetaEjecucion"
+            android:src="@drawable/search_icon" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>	    
+	</LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutBotonesEjecucion"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    <Button 
+	        android:id="@+id/boton_grabar_receta_ejecucion"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/grabarReceta"/>
+	    <Button 
+	        android:id="@+id/boton_borrar_receta_ejecucion"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/borrarReceta"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutIngrediente"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+        <Spinner
+            android:id="@+id/spinnerIngrediente"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+	    <EditText 
+	        android:id="@+id/cantidadIngrediente"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:inputType="number"
+	        android:text=""
+	        android:hint="@string/cantidadIngrediente"/>
+        <Spinner 
+        	android:id="@+id/spinnerUnidad"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+	        android:layout_height="wrap_content"/>
+	</LinearLayout>
+    <Button 
+        android:id="@+id/boton_anadir_ingrediente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/anadirIngrediente"/>
+    <TextView 
+        android:id="@+id/descripcionListaIngredientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/descripcionListaIngredientes" />
+	<ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+</LinearLayout>

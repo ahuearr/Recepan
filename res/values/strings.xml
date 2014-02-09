@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RecePan</string>
+    <string name="action_settings">Settings</string>
+    <string name="titulo">RecePan</string>
+
+    <string name="texto_lista_recetas">Recetas almacenadas:</string>
+
+    <string name="nombreReceta">Receta</string>
+    <string name="descripcionReceta">Descripcion receta</string>
+    <string name="grabarReceta">Grabar</string>
+    <string name="borrarReceta">Borrar</string>
+    <string name="anadirEjecucion">Nueva ejecucion</string>
+    <string name="descripcionListaEjecuciones">Ejecuciones grabadas:</string>
+    
+    <string name="descripcionRecetaEjecucion">Descripcion ejecucion</string>
+    <string name="cantidadIngrediente">Cantidad</string>
+    <string name="anadirIngrediente">Añadir/Modificar</string>
+    <string name="limpiarIngrediente">Limpiar</string>
+    <string name="descripcionListaIngredientes">Ingredientes grabados:</string>
+    
+</resources>
